@@ -7,10 +7,10 @@ class App extends Component {
         
         return (
             <div>
-                <div>
+                <div className="header">
                     {title}
                 </div>
-                <div>
+                <div className="content">
                     {children}           
                 </div>
             </div>

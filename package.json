@@ -4,7 +4,11 @@
   "description": "Brunch skeleton for React + Redux application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --compilers js:babel-core/register --recursive",
+    "test:ui": "cucumber-js --compiler es6:babel-core/register",
+    "test:all": "npm run test && npm run test:ui",
+    "start": "brunch watch --server",
+    "build": "brunch build"
   },
   "repository": {
     "type": "git",
